@@ -21,3 +21,4 @@ template<std::size_t size> Math::Vector<size, Float> extractFloatData(const std:
         Error() << "Trade::ObjImporter::mesh(): invalid float array size";
         throw 0;
     }
+//yes
