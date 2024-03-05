@@ -21,3 +21,10 @@ template<std::size_t size> Math::Vector<size, Float> extractFloatData(const std:
         throw 0;
     }
 //yes
+  if(!name.empty())
+                    _file->meshesForName.emplace(name, _file->meshes.size());
+                _file->meshNames.emplace_back(Utility::move(name));
+                _file->meshes.emplace_back(_file->in->tellg(), 0, positionIndexOffset, textureCoordinateIndexOffset, normalIndexOffset);
+            }
+
+            continue;
