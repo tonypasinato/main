@@ -12,8 +12,7 @@
     }
 
 void ignoreLine(std::istream& in) {
-    in.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-}
+    in.ignore(std::numeric_limits<std::streamsize>::max(), '\n');//good
 
 template<std::size_t size> Math::Vector<size, Float> extractFloatData(const std::string& str, Float* extra = nullptr) {
     std::vector<std::string> data = Utility::String::splitWithoutEmptyParts(str, ' ');
